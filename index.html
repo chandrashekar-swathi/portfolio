@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ***** SC: HEAD ***** -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ***** SC: DO WE NEED TO CHANGE THE SHORTCUT ICON IMAGE ? ***** -->
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Swathi Chandrashekar
+  </title>
+
+  <meta name="description" content="With extensive UX/UI design experience, I create user-centered digital experiences that drive engagement and satisfaction. Skilled in user research, usability testing, and Figma, I collaborate across teams to deliver intuitive, innovative designs that align with both user needs and business goals.">
+  <meta name="keywords" content="Swathi Chandrashekar, UX/UI Designer, user-centered design, Figma, design systems, usability testing, user research, mobile app design, web design, digital experiences, creative design, user interface, user experience, design expert" />
+  
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<!-- ***** SC: BODY ***** -->
+<body>
+
+  <!-- ***** SC: HOME | HEADER AND NAVIGATION ***** -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#body" class="nav__link">Home</a></li> 
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+		  <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="header__text-box row">
+      <div class="header__text">
+		<p> Hello, I am </p>
+		
+        <h1 class="heading-primary">
+			<p id="typewriter"></p>
+			<script>
+				const text = "Swathi Chandrashekar";
+				let i = 0;
+
+				function typeWriter() {
+					if (i < text.length) {
+						document.getElementById("typewriter").innerHTML += text.charAt(i);
+						i++;
+					setTimeout(typeWriter, 100);
+					}
+				}
+
+				// Function to reset and start the typewriter effect every 2 minutes
+				function startTypewriter() {
+					// Reset the content and index
+					document.getElementById("typewriter").innerHTML = '';
+					i = 0;
+
+					// Start the typewriter effect
+					typeWriter();
+				}
+
+				// Initialize the typewriter animation
+				startTypewriter();
+
+				// Set interval to trigger the typewriter effect every 2 minutes
+				setInterval(startTypewriter, 60000);  // 120000ms = 2 minutes
+			</script>
+		</h1>
+		
+		<!-- ***** SC: INTRODUCTION TO BE MODIFIED ***** -->
+        <p>
+          A creative UX/UI Designer, Content Designer and Product Designer!
+          Crafting seamless, user-centered designs that turn ideas into engaging digital experiences
+        </p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+	  
+      <div class="home__photo-container">
+        <img class="home__photo" src="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Images\file.png" alt="Swathi Chandrashekar" />
+      </div>
+    </div>
+	
+  </header>
+
+  <main role="main">
+
+  
+    <!-- ***** SC: ABOUT ME ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+		  <!-- SC: MODIFY IF NECESSARY. ARE WE ADDING EDUCATIONAL BACKGROUND? IS IT NECESSARY? ***** -->
+            <p>
+              With extensive experience as a UX/UI Designer, I specialize in designing user-centered digital experiences that not only captivate users but also drive engagement and satisfaction. 
+              I’ve had the privilege of working across a variety of industries, crafting innovative solutions that bridge the gap between user needs and business objectives. 
+              My skill set encompasses everything from user research and usability testing to UX audits, all aimed at creating designs that are both intuitive and visually appealing. 
+              Adept in Figma and design systems, I excel at collaborating with cross-functional teams to bring bold ideas to life. 
+              Fueled by creativity, technical expertise, and a meticulous attention to detail, my focus is on delivering designs that are as impactful as they are beautiful.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
+	<!-- ***** SC: SKILLS SECTION ***** -->
+	<section class="skills" id="skills">
+	  <div class="row">
+		<h2>My Skills</h2>
+		<div class="skills__content">
+		  <p>
+			Below are some of the key skills that I bring to the table. From designing intuitive interfaces to conducting user research, I thrive on crafting exceptional user experiences.
+		  </p>
+		  <ul class="skills__list">
+			<li>User Research</li>
+			<li>Persona Development</li>
+			<li>Information Architecture</li>
+			<li>Wireframing & Prototyping</li>
+			<li>Usability Testing</li>
+			<li>Visual Design</li>
+			<li>Responsive Design & Interaction Design</li>
+			<li>Figma, Adobe XD</li>
+			<li>HTML, CSS, & JavaScript</li>
+			<li>Agile & Scrum Methodologies</li>
+			<li>Stakeholder Communication</li>
+		  </ul>
+		</div>
+	  </div>
+	</section>
+	
+	<!-- ***** SC: PROJECTS SECTION ***** -->
+	<section class="projects" id="projects">
+	  <div class="row">
+		<h2>My Projects</h2>
+		<div class="projects__content">
+		  <p>
+			Below are some of the projects that I've designed. 
+			These projects have been designed using Figma, Adobe XD, Sketch, Adobe Photoshop, Adobe InDesign.
+			Feel free to click the links and try them out!
+		  </p>
+		  
+		  <!-- Project Filter -->
+		  <div class="projects__filter">
+			<button class="filter-btn active" data-filter="all">All Projects</button> <!-- ***** SC: WANNA GET RID OF THIS? ***** -->
+			<button class="filter-btn" data-filter="media-designs">MEDIA DESIGNS</button>
+			<button class="filter-btn" data-filter="ui-ux-designs">UI/UX DESIGNS</button>
+		  </div>
+		  
+		  <!-- Project Items -->
+		  <div class="projects__items">
+		  
+			<!-- MEDIA DESIGNS -->
+			<div class="projects__item media-designs">
+			  <a href="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Documents\SportsSocial.pdf" class="btn projects__link">
+				<img src="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Images\SportsSocial.png" alt="Social Media Campaign">
+				<h4>Sports Social</h4>
+				<p>Social Media Campaign | Digital Designs</p>
+			  </a>
+			</div>
+			<div class="projects__item media-designs">
+			  <a href="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Documents\JustBe.pdf" class="btn projects__link">
+				<img src="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Images\JustBe.png" alt="Social Media Campaign">
+				<h4>Just Be</h4>
+				<p>Poster Design | Print Media</p>
+			  </a>
+			</div>
+			<div class="projects__item media-designs">
+			  <a href="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Documents\RiipenOnatrio.pdf" class="btn projects__link">
+				<img src="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Images\RiipenOntario.png" alt="Social Media Campaign">
+				<h4>Riipen Onatrio</h4>
+				<p>Digital Ad Design | Banner</p>
+			  </a>
+			</div>
+			
+			<!-- UI/UX DESIGNS -->
+			<div class="projects__item ui-ux-designs">
+			  <a href="https://www.figma.com/proto/AoUnyweGOixY2CKPMrQ0bh/CineConnect_Swathi?node-id=503-2062&t=2XFkJ6jSlzx27r4K-1" class="btn projects__link">
+			  <img src="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Images\CineConnect.png" alt="CineConnect">
+				<h3>UI/UX Project 1</h3>
+				<p>Mobile App UI | User Experience</p>
+			  </a>
+			</div>
+			<div class="projects__item ui-ux-designs">
+			  <a href="https://www.figma.com/proto/xZbp3OHpILNXsYbdGIMaVi/Unite2Change?node-id=0-1&t=iKf9KWVPclI15UqB-1" class="btn projects__link">
+			  <img src="C:\Users\swath\OneDrive\Desktop\ProjectMangement\WorkinCanada\UIUX Portfolio\portfolio\Images\UniteToChange.png" alt="UniteToChange">
+				<h3>UI/UX Project 2</h3>
+				<p>Website Design | User Interface</p>
+			  </a>
+			</div>
+			
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+  </main>
+
+  <!-- ***** SC: CONTACT ME ***** -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Looking for a passionate creator with a knack for crafting visually stunning and user-friendly designs? 
+          Whether it’s building intuitive websites, designing seamless user experiences, or creating eye-catching graphics, I love turning ideas into reality. 
+          Let’s create something amazing together!
+        </p>
+        <a href="mailto:chandrashekar.swathi123@gmail.com" class="btn">chandrashekar.swathi123@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ***** SC: BACK TO HOME ARROW ***** -->
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+
+<script>
+  // Get all filter buttons and project items
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.projects__item');
+
+  // Add event listener to each filter button
+  filterBtns.forEach(button => {
+    button.addEventListener('click', () => {
+      // Get the filter category from the clicked button
+      const filter = button.getAttribute('data-filter');
+      
+      // Loop through all project items and show/hide based on the filter
+      projectItems.forEach(item => {
+        if (item.classList.contains(filter) || filter === 'all') {
+          item.style.display = 'block'; // Show the item
+        } else {
+          item.style.display = 'none'; // Hide the item
+        }
+      });
+    });
+  });
+</script>
+
+
+</html>
