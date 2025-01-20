@@ -510,8 +510,16 @@ body:not(.user-is-tabbing) a:focus {
         text-align: center;
 		text-align: justify;
     }
+	
+	.about__image {
+        display: flex; /* Enable flexbox for the container */
+        justify-content: center; /* Center the image horizontally */
+        width: 100%; /* Ensure the container takes up the full width */
+    }
+	
 	.about__image img {
 		max-width: 50%; /* Resize image on smaller screens */
+		margin: 0 auto; /* Center the image */
 	}
 
 	.about__text {
